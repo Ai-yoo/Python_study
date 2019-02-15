@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+'''
+  author: duzhentong
+  Date: 2018/11/13
+  Time: 8:41
+'''
+
 import urllib
 from urllib import request
 import time
@@ -58,11 +65,11 @@ def main():
     print('总共：',x)
 
 
-
-start_time=time.strftime("%H:%M:%S")
-main()
-end_time=time.strftime("%H:%M:%S")
-with open('time.txt','w') as f:
-    f.write(start_time)
-    f.write('\n')
-    f.write(end_time)
+if __name__=='__main__':
+    start_time=time.strftime("%H:%M:%S")
+    main()
+    end_time=time.strftime("%H:%M:%S")
+    with open('time.txt','w') as f:
+        f.write(start_time)
+        f.write('\n')
+        f.write(end_time)
